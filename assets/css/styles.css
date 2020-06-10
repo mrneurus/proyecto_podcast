@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+
+.header {
+  position: relative;
+  height: 50vh;
+}
+
+.header .header__bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+  background-image: linear-gradient(#fff, #fff);
+  -webkit-transform: skewY(-6deg);
+          transform: skewY(-6deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  z-index: -1;
+}
+
+.header .header__nav {
+  width: 320px;
+  height: 44px;
+  /* background-color: #9edd39; */
+  /*  border: solid 2px black; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header .header__nav ul li {
+  display: none;
+}
+
+.header .header__nav #menu {
+  /*  border: solid 2px black; */
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 90%;
+}
+
+.header .header__nav #menu span {
+  display: block;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -150%);
+          transform: translate(-50%, -150%);
+}
+
+.header .header__nav #menu span:nth-child(1).line::before {
+  content: "";
+  display: block;
+  border-bottom: solid 2px black;
+  height: 10px;
+  width: 13px;
+}
+
+.header .header__nav #menu span:nth-child(2).line::before {
+  content: "";
+  display: block;
+  border-bottom: solid 2px black;
+  height: 10px;
+  width: 13px;
+  margin-top: 5px;
+}
+
+.header .header__nav #menu span:last-child.line::before {
+  content: "";
+  display: block;
+  border-bottom: solid 2px black;
+  height: 10px;
+  width: 13px;
+  margin-top: 10px;
+}
+
+.header .header__content {
+  margin-top: 30px;
+  width: 320px;
+  height: 44px;
+  padding: 10px;
+  margin-left: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #060A24;
+}
+
+.header .header__content h1 {
+  font-size: 34px;
+  letter-spacing: 0;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
+
+.header .header__content p {
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: justify;
+}
+
+.header .header__callaction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 40%;
+}
+
+.header .header__callaction button {
+  width: 288px;
+  height: 48px;
+  background: #00F3BB;
+  font-size: 16px;
+  color: #060A24;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+}
+
+.episodios h2 {
+  margin-top: 30px;
+  margin-left: 20px;
+  font-family: "IBM Plex Sans";
+  font-size: 36px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+
+.episodios .episodios__pods {
+  list-style: none;
+  padding: 15px;
+}
+
+.episodios .episodios__pods li {
+  margin-bottom: 10px;
+}
+
+.episodios .episodios__pods img {
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
